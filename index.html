@@ -1,9 +1,44 @@
 <!DOCTYPE html>
-<form method="POST" action="/addUser">
-    firstname <input type="text" name="first" /><br>
-    lastname <input type="text" name="last" /><br>
-    email <input type="text" name="email" /><br>
-    <input type="submit">
-   </form>
-<html lang="en"></html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reaction Timer</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        button {
+            margin: 10px;
+            padding: 10px 15px;
+            font-size: 16px;
+        } 
+        #start {
+            background-color: green;
+            color: white;
+        }
+        #stop {
+            background-color: red;
+            color: white
+        }
+        input {
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Add a Reaction Time</h1>
+    <input type="text" id="name" placeholder="Fred Blogs">
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    <h2>Times</h2>
+    <ul id="times"></ul>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
 
